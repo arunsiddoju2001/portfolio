@@ -217,6 +217,7 @@ main {
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+    padding-top: 100px;
 }
 
 .hero-content {
@@ -245,6 +246,7 @@ main {
     margin-bottom: 10px;
     font-weight: 700;
     background: linear-gradient(to right, #ffffff, #a5b4fc);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -258,6 +260,7 @@ main {
 
 .hero .title span {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;

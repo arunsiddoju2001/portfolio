@@ -1,4 +1,7 @@
 <svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Professional Tech-Inspired Hero Background</title>
+  <desc>Abstract tech background with geometric elements, nodes, and gradient effects for a backend engineer portfolio</desc>
+  
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0.03" />
@@ -22,68 +25,9 @@
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-  </defs>
-  
-  <rect width="1200" height="800" fill="#03040b"/>
-  <rect width="1200" height="800" fill="url(#grad1)"/>
-  <rect width="1200" height="800" fill="url(#grad2)"/>
-  
-  <circle cx="100" cy="150" r="250" fill="#00f0ff" opacity="0.03" filter="url(#glow1)"/>
-  <circle cx="1100" cy="700" r="300" fill="#bd1df4" opacity="0.03" filter="url(#glow2)"/>
-  <circle cx="600" cy="400" r="200" fill="#00f0ff" opacity="0.02" filter="url(#glow1)"/>
-  
-  <defs>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.05"/>
     </pattern>
-  </defs>
-  <rect width="1200" height="800" fill="url(#grid)"/>
-  
-  <g opacity="0.15">
-    <line x1="0" y1="0" x2="300" y2="0" stroke="#00f0ff" stroke-width="2"/>
-    <line x1="0" y1="0" x2="0" y2="200" stroke="#00f0ff" stroke-width="2"/>
-    <line x1="1200" y1="0" x2="900" y2="0" stroke="#bd1df4" stroke-width="2"/>
-    <line x1="1200" y1="0" x2="1200" y2="150" stroke="#bd1df4" stroke-width="2"/>
-    <line x1="0" y1="800" x2="250" y2="800" stroke="#bd1df4" stroke-width="2"/>
-    <line x1="0" y1="800" x2="0" y2="600" stroke="#bd1df4" stroke-width="2"/>
-    <line x1="1200" y1="800" x2="950" y2="800" stroke="#00f0ff" stroke-width="2"/>
-    <line x1="1200" y1="800" x2="1200" y2="650" stroke="#00f0ff" stroke-width="2"/>
-  </g>
-  
-  <g opacity="0.08">
-    <circle cx="150" cy="120" r="6" fill="#00f0ff"/>
-    <circle cx="220" cy="180" r="5" fill="#00f0ff"/>
-    <circle cx="180" cy="240" r="4" fill="#00f0ff"/>
-    <line x1="150" y1="120" x2="220" y2="180" stroke="#00f0ff" stroke-width="1"/>
-    <line x1="220" y1="180" x2="180" y2="240" stroke="#00f0ff" stroke-width="1"/>
-    
-    <circle cx="1050" cy="650" r="6" fill="#bd1df4"/>
-    <circle cx="1100" cy="720" r="5" fill="#bd1df4"/>
-    <circle cx="1000" cy="750" r="4" fill="#bd1df4"/>
-    <line x1="1050" y1="650" x2="1100" y2="720" stroke="#bd1df4" stroke-width="1"/>
-    <line x1="1100" y1="720" x2="1000" y2="750" stroke="#bd1df4" stroke-width="1"/>
-    
-    <circle cx="600" cy="200" r="5" fill="#00f0ff"/>
-    <circle cx="700" cy="400" r="5" fill="#bd1df4"/>
-    <circle cx="500" cy="600" r="5" fill="#00f0ff"/>
-    <line x1="600" y1="200" x2="700" y2="400" stroke="#00f0ff" stroke-width="0.5"/>
-    <line x1="700" y1="400" x2="500" y2="600" stroke="#bd1df4" stroke-width="0.5"/>
-  </g>
-  
-  <g opacity="0.12">
-    <line x1="0" y1="100" x2="400" y2="500" stroke="#00f0ff" stroke-width="1"/>
-    <line x1="1200" y1="50" x2="700" y2="700" stroke="#bd1df4" stroke-width="1"/>
-    <line x1="200" y1="800" x2="800" y2="200" stroke="#00f0ff" stroke-width="1"/>
-  </g>
-  
-  <g opacity="0.1">
-    <polygon points="950,100 1000,70 1050,100 1050,150 1000,180 950,150" 
-             fill="none" stroke="#bd1df4" stroke-width="1.5"/>
-    <rect x="80" y="500" width="60" height="60" fill="none" stroke="#00f0ff" stroke-width="1.5"/>
-    <polygon points="500,750 550,700 600,750" fill="none" stroke="#bd1df4" stroke-width="1.5"/>
-  </g>
-  
-  <defs>
     <linearGradient id="beam1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00f0ff;stop-opacity:0" />
       <stop offset="50%" style="stop-color:#00f0ff;stop-opacity:0.08" />
@@ -94,33 +38,113 @@
       <stop offset="50%" style="stop-color:#bd1df4;stop-opacity:0.08" />
       <stop offset="100%" style="stop-color:#bd1df4;stop-opacity:0" />
     </linearGradient>
-  </defs>
-  
-  <rect x="0" y="200" width="1200" height="80" fill="url(#beam1)"/>
-  <rect x="300" y="0" width="100" height="800" fill="url(#beam2)"/>
-  <rect x="900" y="0" width="100" height="800" fill="url(#beam1)"/>
-  
-  <g opacity="0.06" fill="#00f0ff">
-    <circle cx="200" cy="300" r="2"/>
-    <circle cx="400" cy="150" r="1.5"/>
-    <circle cx="800" cy="550" r="2"/>
-    <circle cx="1050" cy="300" r="1.5"/>
-    <circle cx="300" cy="700" r="2"/>
-  </g>
-  
-  <g opacity="0.06" fill="#bd1df4">
-    <circle cx="600" cy="100" r="1.5"/>
-    <circle cx="950" cy="450" r="2"/>
-    <circle cx="500" cy="750" r="1.5"/>
-    <circle cx="1100" cy="200" r="2"/>
-    <circle cx="100" cy="500" r="1.5"/>
-  </g>
-  
-  <defs>
     <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
       <stop offset="0%" style="stop-color:#03040b;stop-opacity:0" />
       <stop offset="100%" style="stop-color:#03040b;stop-opacity:0.15" />
     </radialGradient>
   </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="800" fill="#03040b"/>
+  
+  <!-- Gradient overlays -->
+  <rect width="1200" height="800" fill="url(#grad1)"/>
+  <rect width="1200" height="800" fill="url(#grad2)"/>
+  
+  <!-- Large ambient orbs -->
+  <circle cx="100" cy="150" r="250" fill="#00f0ff" opacity="0.03" filter="url(#glow1)"/>
+  <circle cx="1100" cy="700" r="300" fill="#bd1df4" opacity="0.03" filter="url(#glow2)"/>
+  <circle cx="600" cy="400" r="200" fill="#00f0ff" opacity="0.02" filter="url(#glow1)"/>
+  
+  <!-- Grid pattern -->
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  
+  <!-- Corner accent lines -->
+  <g opacity="0.15">
+    <!-- Top left accent -->
+    <line x1="0" y1="0" x2="300" y2="0" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="0" x2="0" y2="200" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Top right accent -->
+    <line x1="1200" y1="0" x2="900" y2="0" stroke="#bd1df4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1200" y1="0" x2="1200" y2="150" stroke="#bd1df4" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Bottom left accent -->
+    <line x1="0" y1="800" x2="250" y2="800" stroke="#bd1df4" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="800" x2="0" y2="600" stroke="#bd1df4" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Bottom right accent -->
+    <line x1="1200" y1="800" x2="950" y2="800" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+    <line x1="1200" y1="800" x2="1200" y2="650" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Floating nodes and connections -->
+  <g opacity="0.1">
+    <!-- Node cluster top left -->
+    <circle cx="150" cy="120" r="6" fill="#00f0ff"/>
+    <circle cx="220" cy="180" r="5" fill="#00f0ff"/>
+    <circle cx="180" cy="240" r="4" fill="#00f0ff"/>
+    <line x1="150" y1="120" x2="220" y2="180" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="220" y1="180" x2="180" y2="240" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Node cluster bottom right -->
+    <circle cx="1050" cy="650" r="6" fill="#bd1df4"/>
+    <circle cx="1100" cy="720" r="5" fill="#bd1df4"/>
+    <circle cx="1000" cy="750" r="4" fill="#bd1df4"/>
+    <line x1="1050" y1="650" x2="1100" y2="720" stroke="#bd1df4" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1100" y1="720" x2="1000" y2="750" stroke="#bd1df4" stroke-width="1.5" stroke-linecap="round"/>
+    
+    <!-- Center network nodes -->
+    <circle cx="600" cy="200" r="5" fill="#00f0ff"/>
+    <circle cx="700" cy="400" r="5" fill="#bd1df4"/>
+    <circle cx="500" cy="600" r="5" fill="#00f0ff"/>
+    <line x1="600" y1="200" x2="700" y2="400" stroke="#00f0ff" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+    <line x1="700" y1="400" x2="500" y2="600" stroke="#bd1df4" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  
+  <!-- Diagonal accent lines -->
+  <g opacity="0.12">
+    <line x1="0" y1="100" x2="400" y2="500" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="1200" y1="50" x2="700" y2="700" stroke="#bd1df4" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="200" y1="800" x2="800" y2="200" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Tech-inspired geometric shapes -->
+  <g opacity="0.12">
+    <!-- Hexagon top right -->
+    <polygon points="950,100 1000,70 1050,100 1050,150 1000,180 950,150" 
+             fill="none" stroke="#bd1df4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Square left side -->
+    <rect x="80" y="500" width="60" height="60" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Triangle bottom center -->
+    <polygon points="500,750 550,700 600,750" fill="none" stroke="#bd1df4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Gradient beams for depth -->
+  <rect x="0" y="200" width="1200" height="80" fill="url(#beam1)"/>
+  <rect x="300" y="0" width="100" height="800" fill="url(#beam2)"/>
+  <rect x="900" y="0" width="100" height="800" fill="url(#beam1)"/>
+  
+  <!-- Floating particles - Cyan -->
+  <g opacity="0.07" fill="#00f0ff">
+    <circle cx="200" cy="300" r="2.5"/>
+    <circle cx="400" cy="150" r="2"/>
+    <circle cx="800" cy="550" r="2.5"/>
+    <circle cx="1050" cy="300" r="2"/>
+    <circle cx="300" cy="700" r="2.5"/>
+  </g>
+  
+  <!-- Floating particles - Purple -->
+  <g opacity="0.07" fill="#bd1df4">
+    <circle cx="600" cy="100" r="2"/>
+    <circle cx="950" cy="450" r="2.5"/>
+    <circle cx="500" cy="750" r="2"/>
+    <circle cx="1100" cy="200" r="2.5"/>
+    <circle cx="100" cy="500" r="2"/>
+  </g>
+  
+  <!-- Vignette effect for focus -->
   <rect width="1200" height="800" fill="url(#vignette)"/>
 </svg>

@@ -1,16 +1,31 @@
+/* ============================================================================
+   ARUN SIDDOJU PORTFOLIO - STYLESHEET
+   Modern glassmorphism design with cyan & purple accent colors
+   ============================================================================ */
+
+/* ============================================================================
+   CSS VARIABLES - Design Tokens
+   ============================================================================ */
 :root {
-    --bg-color: #03040b; /* Very dark blue, almost black */
-    --text-main: #e2e8f0;
-    --text-muted: #94a3b8;
-    --primary: #00f0ff;
-    --secondary: #bd1df4;
+    /* Color Palette */
+    --bg-color: #03040b;           /* Very dark blue, almost black */
+    --text-main: #e2e8f0;          /* Light text for primary content */
+    --text-muted: #94a3b8;         /* Muted text for secondary content */
+    --primary: #00f0ff;            /* Cyan - Primary accent color */
+    --secondary: #bd1df4;          /* Purple - Secondary accent color */
+    
+    /* Glassmorphism Effects */
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.05);
     
+    /* Typography */
     --font-heading: 'Outfit', 'Inter', sans-serif;
     --font-body: 'Inter', sans-serif;
 }
 
+/* ============================================================================
+   GLOBAL STYLES
+   ============================================================================ */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +47,9 @@ body {
     overflow-x: hidden;
 }
 
-/* Background Blobs for dynamic aesthetic */
+/* ============================================================================
+   BACKGROUND ANIMATIONS
+   ============================================================================ */
 .blob {
     position: absolute;
     filter: blur(150px);
@@ -63,7 +80,9 @@ body {
     100% { transform: translate(100px, 100px) scale(1.1); }
 }
 
-/* Typography */
+/* ============================================================================
+   TYPOGRAPHY
+   ============================================================================ */
 h1, h2, h3, h4 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -79,7 +98,9 @@ a:hover {
     color: var(--text-main);
 }
 
-/* Glassmorphism Classes */
+/* ============================================================================
+   GLASSMORPHISM EFFECTS
+   ============================================================================ */
 .glass-card {
     background: var(--glass-bg);
     backdrop-filter: blur(12px);
@@ -89,7 +110,9 @@ a:hover {
     padding: 2.5rem;
     position: relative;
     overflow: hidden;
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
 }
 
 .glass-card::before {
@@ -99,7 +122,10 @@ a:hover {
     left: -100%;
     width: 50%;
     height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.03) 50%,
+                rgba(255,255,255,0) 100%);
     transform: skewX(-25deg);
     transition: left 0.6s ease;
 }
@@ -114,7 +140,9 @@ a:hover {
     box-shadow: 0 15px 40px -10px rgba(0, 240, 255, 0.15);
 }
 
-/* Navbar */
+/* ============================================================================
+   NAVIGATION BAR
+   ============================================================================ */
 .navbar {
     position: fixed;
     top: 0;
@@ -139,19 +167,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-main);
-    font-family: var(--font-heading);
-    letter-spacing: 1px;
-}
-
-.logo:hover {
-    color: var(--primary);
-    text-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
 }
 
 .nav-links {
@@ -183,7 +198,9 @@ a:hover {
     width: 100%;
 }
 
-/* Layout */
+/* ============================================================================
+   MAIN LAYOUT
+   ============================================================================ */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -210,7 +227,9 @@ main {
     background: linear-gradient(to right, var(--glass-border), transparent);
 }
 
-/* Hero Section */
+/* ============================================================================
+   HERO SECTION - With Enhanced Background
+   ============================================================================ */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -278,36 +297,9 @@ main {
     line-height: 1.8;
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    opacity: 0;
-    animation: fadeIn 1.5s ease 0.5s forwards;
-}
-
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 480px;
-    border-radius: 30px;
-    object-fit: cover;
-    border: 1px solid var(--glass-border);
-    box-shadow: 0 20px 80px -20px rgba(0, 240, 255, 0.3);
-    animation: bob 6s ease-in-out infinite;
-    backdrop-filter: blur(5px);
-}
-
-@keyframes bob {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-/* Buttons */
+/* ============================================================================
+   BUTTONS & INTERACTIONS
+   ============================================================================ */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -354,7 +346,9 @@ main {
     gap: 1.5rem;
 }
 
-/* Experience */
+/* ============================================================================
+   EXPERIENCE TIMELINE
+   ============================================================================ */
 .timeline {
     position: relative;
     max-width: 850px;
@@ -420,7 +414,9 @@ main {
     font-size: 1.2rem;
 }
 
-/* Skills */
+/* ============================================================================
+   SKILLS SECTION
+   ============================================================================ */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -440,15 +436,14 @@ main {
 
 .skill-icon {
     font-size: 3rem;
-    display: inline-block;
-    background: rgba(255,255,255,0.05);
-    width: 70px;
-    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    width: 70px;
+    height: 70px;
     border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .skill-tags {
@@ -474,7 +469,9 @@ main {
     background: rgba(0, 240, 255, 0.1);
 }
 
-/* Projects */
+/* ============================================================================
+   PROJECTS SECTION
+   ============================================================================ */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -509,7 +506,9 @@ main {
     margin-bottom: 0.8rem;
 }
 
-/* Layouts */
+/* ============================================================================
+   EDUCATION & ACHIEVEMENTS
+   ============================================================================ */
 .two-col-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -526,6 +525,7 @@ main {
     font-size: 1.3rem;
     margin-bottom: 0.3rem;
 }
+
 .edu-card h4 {
     font-size: 1.1rem;
     color: var(--text-muted);
@@ -536,6 +536,7 @@ main {
 .check-list {
     list-style: none;
 }
+
 .check-list li {
     padding-left: 28px;
     position: relative;
@@ -543,39 +544,47 @@ main {
     color: var(--text-muted);
     font-size: 1.05rem;
 }
+
 .check-list li strong {
     color: var(--text-main);
 }
+
 .check-list li::before {
     content: '✓';
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 0;
     color: var(--secondary);
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-/* Contact */
+/* ============================================================================
+   CONTACT SECTION
+   ============================================================================ */
 .contact-section {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
+
 .contact-card {
     padding: 4rem 3rem;
 }
+
 .contact-card p {
     color: var(--text-muted);
     margin-bottom: 2.5rem;
     font-size: 1.1rem;
 }
+
 .contact-links {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
+
 .phone {
     font-family: var(--font-heading);
     font-size: 1.3rem;
@@ -584,17 +593,21 @@ main {
     margin-bottom: 0 !important;
 }
 
-/* Footer */
+/* ============================================================================
+   FOOTER
+   ============================================================================ */
 footer {
     text-align: center;
     padding: 2.5rem;
     color: var(--text-muted);
     font-size: 0.95rem;
     border-top: 1px solid var(--glass-border);
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
-/* Reveal Animation */
+/* ============================================================================
+   ANIMATIONS & TRANSITIONS
+   ============================================================================ */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -606,46 +619,51 @@ footer {
     transform: translateY(0);
 }
 
-/* Responsive */
+/* ============================================================================
+   RESPONSIVE DESIGN
+   ============================================================================ */
 @media (max-width: 992px) {
     .section-title {
         font-size: 2.2rem;
     }
+
     .hero {
         flex-direction: column;
         text-align: center;
         justify-content: center;
         padding-top: 150px;
     }
-    .hero-image {
-        order: -1;
-    }
-    .hero-image img {
-        max-width: 350px;
-    }
+
     .hero .summary {
         margin: 0 auto 3rem auto;
     }
+
     .cta-group {
         justify-content: center;
     }
+
     .two-col-layout {
         grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
     }
+
     .hero .name {
         font-size: 3rem;
     }
+
     .contact-links {
         flex-direction: column;
     }
+
     .glass-card {
         padding: 1.5rem;
     }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }

@@ -215,14 +215,18 @@ main {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 4rem;
     padding-top: 100px;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-content {
     flex: 1;
     animation: fadeUp 1s ease forwards;
+    max-width: 600px;
+    z-index: 10;
 }
 
 @keyframes fadeUp {

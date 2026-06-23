@@ -74,7 +74,7 @@ function App() {
                   </div>
               </div>
               <div className="hero-image">
-                  <img src="/assets/hero_abstract.png" alt="Clean Abstract 3D Shape" />
+                  <img src={`${import.meta.env.BASE_URL}assets/hero_abstract.png`} alt="Clean Abstract 3D Shape" />
               </div>
           </section>
 

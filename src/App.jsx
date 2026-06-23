@@ -218,22 +218,18 @@ function App() {
           {/* Contact Section */}
           <section id="contact" className="section">
               <h2 className="section-title">Let's Talk</h2>
-              <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.</p>
+              <p style={{ color: 'var(--text-muted)', marginBottom: '2rem', fontSize: '1.1rem', maxWidth: '600px' }}>I am actively looking for job opportunities. If my profile fits your requirements, please feel free to contact me.</p>
               
-              <div style={{ maxWidth: '600px' }}>
-                  <div style={{ marginBottom: '1.5rem' }}>
-                      <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Full Name</label>
-                      <input type="text" placeholder="John Doe" style={{ width: '100%', padding: '1rem', background: '#13141f', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff' }} />
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '400px' }}>
+                  <div className="glass-card" style={{ padding: '1.5rem', borderLeft: '4px solid var(--primary)' }}>
+                      <h3 style={{ color: '#fff', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Email</h3>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}><a href="mailto:arunsiddoju2001@gmail.com" style={{ color: 'var(--primary)', textDecoration: 'none' }}>arunsiddoju2001@gmail.com</a></p>
                   </div>
-                  <div style={{ marginBottom: '1.5rem' }}>
-                      <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Email</label>
-                      <input type="email" placeholder="JohnDoe@email.com" style={{ width: '100%', padding: '1rem', background: '#13141f', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff' }} />
+                  
+                  <div className="glass-card" style={{ padding: '1.5rem', borderLeft: '4px solid var(--primary)' }}>
+                      <h3 style={{ color: '#fff', marginBottom: '0.5rem', fontSize: '1.1rem' }}>Phone</h3>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}><a href="tel:+919550862209" style={{ color: 'var(--primary)', textDecoration: 'none' }}>+91 9550862209</a></p>
                   </div>
-                  <div style={{ marginBottom: '1.5rem' }}>
-                      <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '600' }}>Message</label>
-                      <textarea rows="5" placeholder="Share your thoughts..." style={{ width: '100%', padding: '1rem', background: '#13141f', border: '1px solid var(--glass-border)', borderRadius: '8px', color: '#fff' }}></textarea>
-                  </div>
-                  <button type="button" className="btn" style={{ background: '#5c3ce6', color: '#fff', width: '100%' }}>Send Message</button>
               </div>
           </section>
       </main>
